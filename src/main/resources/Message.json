@@ -1,0 +1,10 @@
+{
+  "_id": "_design/view2",
+  "_rev": "1-102bafa41131511d3f1a1a846640dd2f",
+  "views": {
+    "name,password": {
+      "map": "function (doc) {\n  emit(doc._id, {\"name\":doc.name,\"password\":doc.password});\n}"
+    }
+  },
+  "language": "javascript"
+}
